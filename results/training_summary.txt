@@ -1,0 +1,44 @@
+
+======================================================================
+MODEL TRAINING SUMMARY
+======================================================================
+
+DATASET:
+  Total samples: 7442
+  Training: 5209 (70.0%)
+  Validation: 1116 (15.0%)
+  Test: 1117 (15.0%)
+
+AUDIO PROPERTIES:
+  Sample rate: 22050 Hz
+  Mel bands: 128
+  Spectrogram shape: (7442, 128, 87)
+
+MODEL ARCHITECTURE:
+  Conv2D(32) → BatchNorm → MaxPool → Dropout(0.3)
+  Conv2D(64) → BatchNorm → MaxPool → Dropout(0.3)
+  Conv2D(128) → BatchNorm → MaxPool → Dropout(0.3)
+  Flatten → Dense(256) → Dropout(0.5)
+  Dense(128) → Dropout(0.3) → Dense(6) → Softmax
+
+TRAINING:
+  Optimizer: Adam (lr=0.001)
+  Loss: Sparse Categorical Crossentropy
+  Batch size: 32
+  Max epochs: 50
+  Early stopping: patience=10
+
+RESULTS:
+  Test Accuracy: 35.72%
+  Best Model: models/best_model.h5
+
+SAVED FILES:
+  models/best_model.h5 - Trained model
+  models/label_encoder.npy - Class labels
+  results/training_history.png - Training curves
+  results/confusion_matrix.png - Confusion matrix
+  results/per_class_metrics.csv - Per-class metrics
+
+======================================================================
+TRAINING COMPLETE!
+======================================================================
