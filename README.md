@@ -1,6 +1,6 @@
 # Speech Emotion Recognition
 
-**Author:** Christina Martinez - CS 4337 Computer Vision
+**Author:** Christina Martinez
 
 A deep learning project to classify emotions from speech audio using CNN and mel-spectrograms.
 
@@ -8,7 +8,6 @@ A deep learning project to classify emotions from speech audio using CNN and mel
 
 * **Goal:** Classify speaker emotions (anger, disgust, fear, happiness, sadness, neutral) from audio files
 * **Approach:** CNN trained on mel-spectrogram representations of speech audio
-* **Course:** CS 4337 001 - Computer Vision
 
 ## Setup Instructions
 
@@ -201,4 +200,5 @@ print(f"Predicted emotion: {emotion}")
 * Kingma, D.P., & Ba, J. (2015). "Adam: A Method for Stochastic Optimization"
 * Ioffe, S., & Szegedy, C. (2015). "Batch Normalization: Accelerating Deep Network Training"
 * McFee, B., et al. (2015). "librosa: Audio and Music Signal Analysis in Python"
+
 
